@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+<body>
+    <div id="yo"></div>
+    <div id="yo1"></div>
+  <script>
+    let text = " "
+    let name = ["Sabita","Nabin","Nilam","Janki"]
+    name.forEach(myFunction)
+    function myFunction(elements,index){
+text += index + ":" + elements + "<br>"
+    }
+    document.getElementById("yo").innerHTML = text
+    
+    let text1 = "jhdgjdfdfgedhgd"
+    let arr = Array.from(text1)
+    document.getElementById("yo1").innerHTML = arr
+  </script>  
+</body>
+</html>

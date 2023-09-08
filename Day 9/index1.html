@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Lemon</li>
+        <li>Water</li>
+    </ul>
+    <button onclick="myFunction()">Append</button>
+    <script>
+        function myFunction(){
+const node = document.createElement("li")
+const textnode = document.createTextNode("TO DRINK")
+node.appendChild(textnode)
+document.getElementById("myList").appendChild(node);
+        }
+</script>
+</body>
+</html>
